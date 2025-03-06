@@ -70,11 +70,7 @@
             
         function createTable(data, columns) {
             // Select a subset of columns to display
-            const displayColumns = [
-                'sku', 'variant_name', 'color', 'product_name', 
-                'product_status', 'category', 'wallpaper_type', 
-                'variant_price', 'variant_inventory_quantity'
-            ];
+            const displayColumns = columns;
             
             // Get column headers that exist in the data
             const tableColumns = displayColumns.filter(col => columns.includes(col));
